@@ -115,7 +115,7 @@ jobs:
           bench --site test_site run-tests --app erpnext --coverage --junit-xml-output /home/runner/frappe-bench/test_results.xml 2>&1 | tee test_output.log
           echo "Tests completed, proceeding..."
 
-      # ✅ Updated Step Starts Here.
+      # ✅ Updated Step Starts Here
       - name: Convert Test Results to CSV
         run: |
           pip install xmltodict pandas
